@@ -17,7 +17,9 @@ const Login = () => {
     const onlogin = async (e) => {
         e.preventDefault();
 
-        const loginData = await axios.post(`${process.env.REACT_APP_API}/user/login`, {...loginForm});
+        const loginData = await axios.post(`${process.env.REACT_APP_API}/user/login`, {...loginForm}, {
+            'Access-Control-Allow-Origin': '*'
+        });
         console.log(loginData.data);
         if (loginData.data) {
             localStorage.setItem('jwt-auth-token', loginData.data.token);
