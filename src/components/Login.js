@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import SidebarContext from '../context/sidebarContext';
+import UserContext from '../context/userContext';
 import axios from 'axios';
 
 const Login = () => {
+    const history = useHistory();
+    const { sidebarStyle, setSidebarStyle } = useContext(SidebarContext);
+    const { userData, setUserData } = useContext(UserContext);
     const [loginForm, setLoginForm] = useState({});
 
     function onloginChange(e) {
@@ -11,7 +17,14 @@ const Login = () => {
     const onlogin = async (e) => {
         e.preventDefault();
 
-        await axios.post(`${process.env.REACT_APP_API}/user`, {...loginForm});
+        const loginData = await axios.post(`${process.env.REACT_APP_API}/user/login`, {...loginForm});
+        console.log(loginData.data);
+        if (loginData.data) {
+            localStorage.setItem('jwt-auth-token', loginData.data.token);
+            setUserData({ user_id: loginData.data.user_id });
+            setSidebarStyle('feed');
+            return history.push('/feed');
+        }
     }
 
     return (

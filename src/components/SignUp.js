@@ -11,7 +11,7 @@ const SignUp = () => {
     const onSignUp = async (e) => {
         e.preventDefault();
 
-        await axios.post(`${process.env.REACT_APP_API}/user`, {...signUpForm});
+        await axios.post(`${process.env.REACT_APP_API}/user/`, {...signUpForm});
     }
 
     return (

@@ -5,4 +5,53 @@
     top: 0;
     left: 0;
     background-color: aquamarine;
+    z-index: 200;
+}
+
+.sidebar.heading {
+    font-size: 25pt;
+    height: 30px;
+    width: 200px;
+    z-index: 200;
+}
+
+.sidebar.feed {
+    height: 30px;
+    width: 200px;
+    z-index: 200;
+    margin-top: 50px;
+}
+
+.sidebar.picture {
+    height: 30px;
+    width: 200px;
+    z-index: 200;
+    margin-top: 80px;
+}
+
+.sidebar.profile {
+    height: 30px;
+    width: 200px;
+    z-index: 200;
+    margin-top: 110px;
+}
+
+.sidebar.landing {
+    height: 30px;
+    width: 200px;
+    z-index: 200;
+    margin-top: 140px;
+}
+
+.sidebar.devpeek {
+    height: 30px;
+    width: 200px;
+    z-index: 200;
+    margin-top: 170px;
+}
+
+.sidebar.hidden {
+    height: 30px;
+    z-index: 200;
+    margin-top: 80px;
 }
