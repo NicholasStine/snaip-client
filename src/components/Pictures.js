@@ -54,7 +54,7 @@ const Picture = () => {
             <div>
                 {userImages.map((img, i) => {
                     return (
-                        <img scr={img.img_url} style={{width: '200px', height: '200px'}} />
+                        <img src={img.img_url} style={{width: '200px', height: '200px'}} />
                     )
                 })}
             </div>

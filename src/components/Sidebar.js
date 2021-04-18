@@ -8,12 +8,12 @@ const Sidebar = () => {
     const { sidebarStyle, setSidebarStyle } = useContext(SidebarContext);
 
     const onHoverIn = (e) => {
-        console.log('in')
+        // console.log('in')
         // setSidebarStyle({ feed: 'sidebar feed', pictures: 'sidebar pictures', profile: 'sidebar profile',  landing: 'sidebar landing', devpeek: 'sidebar devpeek' })
     }
 
     const onHoverOut = (e) => {
-        console.log("out mama");
+        // console.log("out mama");
         // setSidebarStyle({ feed: 'sidebar feed', pictures: 'sidebar hidden', profile: 'sidebar hidden',  landing: 'sidebar hidden', devpeek: 'sidebar hidden' });
     }
 
