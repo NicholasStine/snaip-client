@@ -29,7 +29,7 @@ const Login = () => {
 
     return (
         <div>
-            <p>Sign Up Page</p>
+            <p value={{sidebarStyle, userData}}>Sign Up Page</p>
             <form className="form" onSubmit={onlogin}>
                 <div>
                     <label>Email</label>

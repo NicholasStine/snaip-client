@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import SidebarContext from '../context/sidebarContext';
 import './styles.css';
@@ -28,7 +28,7 @@ const Sidebar = () => {
             <div className="sidebar heading">
                 <strong>Snaip</strong>
             </div>
-            {sidebarStyle == 'landing' ? (
+            {sidebarStyle === 'landing' ? (
                 <div className="m-1 mt-5">
                     <div>
                         <Link to="/">Login</Link>

@@ -3,7 +3,7 @@ import axios from 'axios';
 import UserContext from '../context/userContext';
 
 const Picture = () => {
-    const { userData, setUserData } = useContext(UserContext);
+    const { userData } = useContext(UserContext);
     const [image, setImage] = useState();
     const [userImages, setUserImages] = useState([]);
     
@@ -54,7 +54,7 @@ const Picture = () => {
             <div>
                 {userImages.map((img, i) => {
                     return (
-                        <img src={img.img_url} style={{width: '200px', height: '200px'}} />
+                        <img alt=" " src={img.img_url} style={{width: '200px', height: '200px'}} />
                     )
                 })}
             </div>

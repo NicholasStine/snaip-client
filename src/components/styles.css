@@ -1,3 +1,59 @@
+.csv.container {
+    height: auto;
+}
+
+.csv.images {
+    height: 300px;
+    width: 50%;
+    display: flex;
+}
+
+.csv.scroll-buttons {
+    height: 60%;
+    margin: 10px;
+    vertical-align: auto;
+}
+
+.csv.image-display {
+    height: 100%;
+    width: 300px;
+}
+
+.csv.options {
+    height: 50px;
+    width: 100%;
+}
+
+.csv.row {
+    height: auto;
+}
+
+.controlled-checkbox.submit-btn {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.drag-drop.container {
+    border-style: solid;
+    border-color: gray;
+    justify-content: center;
+    height: auto;
+}
+
+.drag-drop.component {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drag-drop.target {
+    width: 50px;
+    height: 50px;
+}
+
 .sidebar {
     height: 100%;
     width: 200px;
@@ -54,4 +110,8 @@
     height: 30px;
     z-index: 200;
     margin-top: 80px;
+}
+
+.canvas.main {
+    background-color: black;
 }

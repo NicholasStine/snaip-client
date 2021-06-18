@@ -7,7 +7,7 @@ const Feed = () => {
     useEffect(() => {
         console.log(sidebarStyle);
         setSidebarStyle({ feed: 'sidebar feed', pictures: 'sidebar hidden', profile: 'sidebar hidden',  landing: 'sidebar hidden', devpeek: 'sidebar hidden' });
-    }, []);
+    });
 
     return (
         <div>
