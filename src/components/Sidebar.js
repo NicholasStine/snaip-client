@@ -25,23 +25,29 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar" onMouseEnter={onHoverIn} onMouseLeave={onHoverOut}>
-            <div className="sidebar heading">
+            <div className="sidebar-heading">
                 <strong>Snaip</strong>
             </div>
             {sidebarStyle === 'landing' ? (
                 <div className="m-1 mt-5">
-                    <div>
-                        <Link to="/">Login</Link>
-                    </div>
-                    <div>
-                        <Link to="/devpeek">Dev Peek</Link>
-                    </div>
+                    <Link to="/">
+                        <div className="sidebar-option">
+                            Login
+                        </div>
+                    </Link>
+                    <Link to="/devpeek">
+                        <div className="sidebar-option">
+                            Dev Peek
+                        </div>
+                    </Link>
                 </div>
             ) : (
                 <div className="m-1 mt-5">
-                    <div>
-                        <Link to="/feed">Feed</Link>
-                    </div>
+                    <Link to="/feed">
+                        <div>
+                            Feed
+                        </div>
+                    </Link>
                     <div>
                         <Link to="/pictures">Picture</Link>
                     </div>

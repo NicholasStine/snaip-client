@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { GoogleApiWrapper } from 'google-maps-react';
-import Gist from 'react-gist';
 
 import SocketIO from './SocketIO';
 import CanvasComponent from './CanvasComponent';
 import EscapeVerification from './EscapeVerification';
 import CSVvisualizer from './CSVvisualizer';
 import ControlledCheckboxes from './ControlledCheckboxes';
+import MinesweeperBot from './MinesweeperBot';
 
 const DevPeek = ({ google }) => {
     const [pythonRes, setPythonRes] = useState({});
@@ -34,7 +34,7 @@ const DevPeek = ({ google }) => {
                 <p>Dev Peek Page</p>
                 <div className="card p-3 my-2">
                     <strong>Minesweeper Bot</strong>
-                    <Gist id='30e647aff477308e618a0e7255a6e438' />
+                    <MinesweeperBot />
                 </div>
                 <div className="card p-3 my-2">
                     <ControlledCheckboxes />
