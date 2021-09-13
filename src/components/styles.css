@@ -124,3 +124,8 @@
 .canvas.main {
     background-color: black;
 }
+
+.tf-cnn.gif {
+    height: 40vh;
+    margin: 1rem;
+}
