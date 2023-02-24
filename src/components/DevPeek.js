@@ -9,6 +9,7 @@ import CSVvisualizer from './CSVvisualizer';
 import ControlledCheckboxes from './ControlledCheckboxes';
 import MinesweeperBot from './MinesweeperBot';
 import TfCNN from './TfCNN';
+import PIController from './PIController';
 
 const DevPeek = ({ google }) => {
     const [pythonRes, setPythonRes] = useState({});
@@ -33,6 +34,9 @@ const DevPeek = ({ google }) => {
         <div style={{ height: '100vh', overflowY: 'scroll' }}>
             <div>
                 <p>Dev Peek Page</p>
+                <div className="card p-3 my-2">
+                    <PIController />
+                </div>
                 <div className="card p-3 my-2">
                     <strong className="h2">Tensorflow CNN</strong>
                     <p>A Tensorflow CNN that trains on a video and saves output from multiple convolutional and pooling layers as new video files</p>
